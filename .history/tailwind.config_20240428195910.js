@@ -9,12 +9,11 @@ export default {
       colors: {
         green: "#A6977C",
         whiteTitle: "#FCFEFF",
-        whiteText: "#FCFEFFD5",
+        whiteText: "#FCFEFFC",
       },
     },
     fontFamily: {
       title: ["Kaushan Script", "cursive"],
-      text: ["Nanum Gothic Coding", "monospace"],
     },
   },
   plugins: [],

@@ -14,7 +14,6 @@ export default {
     },
     fontFamily: {
       title: ["Kaushan Script", "cursive"],
-      text: ["Nanum Gothic Coding", "monospace"],
     },
   },
   plugins: [],

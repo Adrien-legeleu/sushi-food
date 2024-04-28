@@ -5,16 +5,12 @@ export default {
     extend: {
       backgroundColor: {
         greenBlack: "#0B1517",
-      },
-      colors: {
         green: "#A6977C",
-        whiteTitle: "#FCFEFF",
-        whiteText: "#FCFEFFD5",
+        white: "#FCFEFF",
       },
     },
     fontFamily: {
       title: ["Kaushan Script", "cursive"],
-      text: ["Nanum Gothic Coding", "monospace"],
     },
   },
   plugins: [],
