@@ -19,7 +19,7 @@ const StyledTextField = styled(TextField)({
         fontSize: "18px", // Taille de police augmentée
     },
     "& .MuiInput-underline:after": {
-        borderBottomColor: "#a1a1a1", 
+        borderBottomColor: "#a9a9a9", 
     },
      "& .MuiInput-underline:before": {
         borderBottomWidth: "2px",

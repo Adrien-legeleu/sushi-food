@@ -18,19 +18,14 @@ const StyledTextField = styled(TextField)({
         color: "white", // Couleur du texte blanc
         fontSize: "18px", // Taille de police augmentée
     },
-    "& .MuiInput-underline:after": {
-        borderBottomColor: "#a1a1a1", 
-    },
-     "& .MuiInput-underline:before": {
+    "& .MuiInput-underline:before": {
         borderBottomWidth: "2px",
-        padding: "10px",
-        borderBottomColor: "#a9a9a9",
-        borderRadius: "2px", // Border radius ajouté
+        padding: "10px", 
+        borderBottomColor: "#c2c2c2", 
+        color: "#c2c2c2", 
     },
-    "& .MuiFormLabel-root": {
-        color: "white", // Couleur du placeholder blanc
-    },
+    
     "& .MuiFormLabel-root.Mui-focused": {
-        color: "#a1a1a1",
+        color: "#a1a1a1", 
     },
 });

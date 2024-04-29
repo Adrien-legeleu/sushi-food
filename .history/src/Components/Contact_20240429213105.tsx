@@ -1,3 +1,4 @@
+import { BorderColor } from "@mui/icons-material";
 import { styled, TextField } from "@mui/material"
 
 export const Contact =()=>{
@@ -14,23 +15,21 @@ export const Contact =()=>{
 }
 
 const StyledTextField = styled(TextField)({
-    "& .MuiInputBase-input": {
-        color: "white", // Couleur du texte blanc
-        fontSize: "18px", // Taille de police augmentée
+    "& .MuiInput-underline:before": {
+        borderBottomColor: "red", // Couleur de la bordure rouge par défaut
+        borderBottomWidth: "3px", // Largeur de la bordure augmentée
+        padding: "10px", // Ajout de padding
     },
     "& .MuiInput-underline:after": {
-        borderBottomColor: "#a1a1a1", 
+        borderBottomColor: "red", // Couleur de la bordure rouge par défaut
     },
-     "& .MuiInput-underline:before": {
-        borderBottomWidth: "2px",
-        padding: "10px",
-        borderBottomColor: "#a9a9a9",
-        borderRadius: "2px", // Border radius ajouté
+    "& .MuiInput-underline.Mui-focused:before": {
+        borderBottomColor: "green", // Couleur de la bordure verte au focus
     },
-    "& .MuiFormLabel-root": {
-        color: "white", // Couleur du placeholder blanc
+    "& .MuiInput-underline.Mui-focused::before": {
+        borderBottomColor: "green", // Couleur de la bordure verte au focus
     },
     "& .MuiFormLabel-root.Mui-focused": {
-        color: "#a1a1a1",
+        color: "green", // Couleur du placeholder verte au focus
     },
 });

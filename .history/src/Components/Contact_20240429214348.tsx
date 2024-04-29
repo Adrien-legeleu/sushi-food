@@ -18,9 +18,9 @@ const StyledTextField = styled(TextField)({
         color: "white", // Couleur du texte blanc
         fontSize: "18px", // Taille de police augmentée
     },
-    "& .MuiInput-underline:after": {
-        borderBottomColor: "#a1a1a1", 
-    },
+    // "& .MuiInput-underline:after": {
+    //     borderBottomColor: "#a1a1a1", 
+    // },
      "& .MuiInput-underline:before": {
         borderBottomWidth: "2px",
         padding: "10px",
