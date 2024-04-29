@@ -5,9 +5,11 @@ export default {
     extend: {
       backgroundColor: {
         greenBlack: "#0B1517",
+        redBG: "#DD2B2D",
       },
       colors: {
         green: "#A6977C",
+        red: "#DD2B2D",
         whiteTitle: "#FCFEFF",
         whiteText: "#FCFEFFD5",
       },
