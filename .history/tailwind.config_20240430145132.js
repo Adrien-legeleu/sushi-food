@@ -15,7 +15,7 @@ export default {
       },
       boxShadow: {
         about: "0 0 50px 5px black",
-        picture: " 0 -8px  80px 0px #ffffff30",
+        picture: "-10px 0 10px 0px #ffffff30",
       },
     },
     fontFamily: {

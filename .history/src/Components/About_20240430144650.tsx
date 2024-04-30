@@ -6,7 +6,7 @@ export const About =()=>{
             </div>
             <div className="flex items-center mt-20 w-2/3 h-[90%] ">
                 <div className="flex-1 h-[80%]">
-                    <img className="w-2/3 h-full rounded-3xl object-cover shadow-2xl shadow-picture" src="./picture.jpeg" alt="" />
+                    <img className="w-2/3 h-full rounded-3xl object-cover shadow-xl shadow-white" src="./picture.jpeg" alt="" />
                 </div>
                 <div className="flex-1 flex gap-4 flex-col">
                     <h6 className="text-whiteText text-sm font-title">YOUR SPECIAL OCCASION DETINATION</h6>

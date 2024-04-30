@@ -14,8 +14,7 @@ export default {
         whiteText: "#FCFEFFD5",
       },
       boxShadow: {
-        about: "0 0 50px 5px black",
-        picture: " 0 -8px  80px 0px #ffffff30",
+        about: "0 0 30px 15px white",
       },
     },
     fontFamily: {

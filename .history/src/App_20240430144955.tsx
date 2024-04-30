@@ -6,7 +6,7 @@ const App =()=> {
     <div className="bg-greenBlack h-full w-full gap-20 ">
       <Header/>
       <Landing/>
-      <div className="h-full w-full bg-[url('././assets/fond.jpeg')]  bg-cover bg-center relative shadow-about">
+      <div className="h-full w-full bg-[url('././assets/fond.jpeg')]  bg-cover bg-center relative shadow-lg shadow-white">
           <About/>
            <Menu/>
       </div>
