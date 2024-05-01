@@ -30,9 +30,9 @@ export const About = () => {
           />
         </div>
         <div className="flex gap-4 flex-col text-center lg:text-left">
-          <h6 className="text-whiteText text-sm font-title">
+          <p className="text-whiteText text-sm font-title">
             YOUR SPECIAL OCCASION DETINATION
-          </h6>
+          </p>
           <h2 className="text-green md:text-xl text-lg font-text">
             Découvrez SushiFood : fraîcheur, qualité et créativité dans chaque
             bouchée !

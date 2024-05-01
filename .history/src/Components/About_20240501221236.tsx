@@ -30,7 +30,7 @@ export const About = () => {
           />
         </div>
         <div className="flex gap-4 flex-col text-center lg:text-left">
-          <h6 className="text-whiteText text-sm font-title">
+          <h6 className="text-whiteText text-md font-title">
             YOUR SPECIAL OCCASION DETINATION
           </h6>
           <h2 className="text-green md:text-xl text-lg font-text">

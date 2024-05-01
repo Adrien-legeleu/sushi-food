@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 export const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const [isVisibleMenu, setIsVisibleMenu] = useState(true);
+  const [isVisibleMenu, setIsVisibleMenu] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", scrollHeader);
@@ -16,9 +16,9 @@ export const Header = () => {
     console.log("recent", recentScroll, "prev", prevScroll);
 
     if (recentScroll - prevScroll > 0) {
-      setIsVisibleMenu(false);
-    } else {
       setIsVisibleMenu(true);
+    } else {
+      setIsVisibleMenu(false);
     }
     prevScroll = recentScroll;
   };
@@ -51,13 +51,7 @@ export const Header = () => {
           </Link>
         </ul>
       ) : (
-        <div className="h-full  pr-5 flex items-center justify-center">
-          <div
-            className={`fixed top-0 left-0 h-screen w-full ${
-              isOpenMenu ? "block" : "hidden"
-            }`}
-            onClick={() => setIsOpenMenu(!isOpenMenu)}
-          ></div>
+        <div className="h-full pr-5 flex items-center justify-center">
           <div
             className="w-8 h-8 relative"
             onClick={() => setIsOpenMenu(!isOpenMenu)}
@@ -70,7 +64,7 @@ export const Header = () => {
             <div className="absolute top-1/2 left-1/2 w-1 h-full rotate-90 rounded-full -translate-x-1/2 -translate-y-1/2 bg-redBG"></div>
           </div>
           <ul
-            className={`duration-300 absolute -bottom-1/2 left-1/2 -translate-x-1/2 w-[95%] flex items-center gap-5 justify-between p-2 bg-greenBlack rounded-full text-whiteText text-xl ${
+            className={`duration-300 absolute -bottom-1/2 left-1/2 -translate-x-1/2 flex items-center gap-5 justify-between p-2 bg-greenBlack rounded-full text-whiteText text-xl ${
               isOpenMenu ? "opacity-100 visited:" : "opacity-0 invisible"
             }`}
           >

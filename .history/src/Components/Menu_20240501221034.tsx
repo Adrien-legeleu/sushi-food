@@ -12,7 +12,7 @@ export const Menu = () => {
             <h2 className="text-whiteTitle text-4xl font-title">
               OUR CHEF RECOMMEND
             </h2>
-            <p className="text-green md:text-xl font-text mt-1 pl-2 pr-2 text-lg">
+            <p className="text-green text-xl font-text mt-1 pl-2 pr-2">
               Explorez les préférences culinaires de notre chef avec une
               sélection exclusive de plats recommandés. Chaque choix reflète
               l'expertise et la passion de notre chef pour l'art du sushi, vous

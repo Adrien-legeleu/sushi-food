@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 export const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const [isVisibleMenu, setIsVisibleMenu] = useState(true);
+  const [isVisibleMenu, setIsVisibleMenu] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", scrollHeader);
@@ -16,9 +16,9 @@ export const Header = () => {
     console.log("recent", recentScroll, "prev", prevScroll);
 
     if (recentScroll - prevScroll > 0) {
-      setIsVisibleMenu(false);
-    } else {
       setIsVisibleMenu(true);
+    } else {
+      setIsVisibleMenu(false);
     }
     prevScroll = recentScroll;
   };
@@ -52,12 +52,6 @@ export const Header = () => {
         </ul>
       ) : (
         <div className="h-full  pr-5 flex items-center justify-center">
-          <div
-            className={`fixed top-0 left-0 h-screen w-full ${
-              isOpenMenu ? "block" : "hidden"
-            }`}
-            onClick={() => setIsOpenMenu(!isOpenMenu)}
-          ></div>
           <div
             className="w-8 h-8 relative"
             onClick={() => setIsOpenMenu(!isOpenMenu)}

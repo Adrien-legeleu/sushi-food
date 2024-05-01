@@ -16,9 +16,9 @@ export const Header = () => {
     console.log("recent", recentScroll, "prev", prevScroll);
 
     if (recentScroll - prevScroll > 0) {
-      setIsVisibleMenu(false);
-    } else {
       setIsVisibleMenu(true);
+    } else {
+      setIsVisibleMenu(false);
     }
     prevScroll = recentScroll;
   };
