@@ -1,6 +1,6 @@
 export const About =()=>{
     return(
-        <div className="h-screen w-full  relative flex items-center justify-center  max-w-[1500px] m-auto mb-52 lg:mb-0">
+        <div className="h-screen w-full  relative flex items-center justify-center  max-w-[1500px] m-auto mb-52 lg:mb-0" id="about">
             <div className="absolute h-[58%]  -top-[45%] left-0 hidden lg:block">
                 <img className="w-full h-full object-contain" src="./psd (3).png" alt="cerisier" />
             </div>

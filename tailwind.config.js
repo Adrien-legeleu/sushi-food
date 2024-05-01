@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -9,7 +10,6 @@ export default {
       },
       colors: {
         green: "#A6977C",
-        greenBlack: "#0B1517",
         red: "#DD2B2D",
         whiteTitle: "#FCFEFF",
         whiteText: "#FCFEFFD5",
@@ -24,6 +24,20 @@ export default {
       title: ["Kaushan Script", "cursive"],
       text: ["Nanum Gothic Coding", "monospace"],
     },
+    textShadow: {
+      lg: "0 8px 16px black",
+    },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "text-shadow": (value) => ({
+            textShadow: value,
+          }),
+        },
+        { values: theme("textShadow") }
+      );
+    }),
+  ],
 };

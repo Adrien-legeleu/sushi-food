@@ -2,7 +2,7 @@ import { styled, TextField } from "@mui/material"
 
 export const Contact =()=>{
     return(
-        <div  className="h-screen w-full bg-[url('././assets/contact-fond.jpg')] bg-cover bg-bottom bg-fixed flex flex-col items-center justify-center">
+        <div  className="h-screen w-full bg-[url('././assets/contact-fond.jpg')] bg-cover bg-bottom bg-fixed flex flex-col items-center justify-center" id="contact">
             <h2 className="font-title text-6xl text-green md:pl-[50%] md:pr-[10%] mb-8  2xl:text-8xl">Contactez-nous</h2>
             <form className="flex flex-col w-full pl-10 pr-10 md:pl-[50%] md:pr-[10%] gap-5 ">
                 <StyledTextField  id="name" label="name" variant="standard" />

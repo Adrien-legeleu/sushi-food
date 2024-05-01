@@ -8,7 +8,7 @@ import '@splidejs/react-splide/css';
 const MenuPage = () => {
     return (
         <div className="h-full -w-full bg-black">
-            <div className="h-full w-full bg-[url('././assets/menupage.jpg')] bg-right-top bg-cover flex items-center pb-24">
+            <div className="h-full w-full bg-[url('././assets/menupage.jpeg')] bg-left-bottom bg-cover flex items-center pb-24">
             <Header />
             <div className="flex flex-col gap-10 mt-32">
             <h1 className="text-7xl text-center font-title text-whiteTitle mb-12">Discover our menu ! </h1>
@@ -21,10 +21,11 @@ const MenuPage = () => {
                                 {
                                     menu.repas.map((food, index) => {
                                         return (
-                                            <SplideSlide className="rounded-3xl flex flex-col justify-between pl-5 pr-5 " key={index}>
+                                            <SplideSlide className="rounded-3xl flex flex-col justify-between gap-2 h-full pl-5 pr-5 relative " key={index}>
                                                 <h4 className="text-whiteTitle text-lg font-text text-center">{food.title}</h4>
                                                 <img className="rounded-3xl" src={food.src} alt={`image ${food.title}`} />
-                                                <p className="text-whiteText font-text text-sm text-left">{food.title}</p>
+                                                <p className="text-whiteText font-text text-sm text-left text-shadow-lg">{food.desc}</p>
+<div className={`absolute w-[2px] h-1/3 top-1/2 -translate-y-1/2 right-0 bg-whiteText rounded-full ${index  === menu.repas.length-1 ? "hidden" : "block"}`}></div>
                                             </SplideSlide>
                                         )
                                     })
