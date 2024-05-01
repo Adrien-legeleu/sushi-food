@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 export const Menu = () => {
   return (
     <div className="h-screen w-full lg:pl-36">
@@ -16,9 +18,12 @@ export const Menu = () => {
               l'expertise et la passion de notre chef pour l'art du sushi, vous
               offrant une expérience gustative incomparable.
             </p>
-            <button className=" mt-5 p-2 pl-4 pr-4 hover:brightness-90 duration-300  bg-redBG rounded-full m-auto text-whiteText">
+             <NavLink to="menu">
+          <button className=" mt-5 p-2 pl-4 pr-4 hover:brightness-90 duration-300  bg-redBG rounded-full m-auto text-whiteText">
               OUR MENU
             </button>
+          </NavLink>
+            
           </div>
         </div>
         <div className="flex-1 h-[80%]">

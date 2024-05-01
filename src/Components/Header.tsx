@@ -2,6 +2,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import PinterestIcon from "@mui/icons-material/Pinterest";
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 export const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   return (
@@ -12,9 +13,11 @@ export const Header = () => {
           <li className="cursor-pointer  duration-200 hover:bg-red rounded-full p-6 pt-2 pb-2">
             About
           </li>
+          <NavLink to="menu">
           <li className="cursor-pointer  duration-200 hover:bg-red rounded-full p-6 pt-2 pb-2">
             Menus
           </li>
+          </NavLink>
           <li className="cursor-pointer  duration-200 hover:bg-red rounded-full p-6 pt-2 pb-2">
             Reservation
           </li>
@@ -36,9 +39,11 @@ export const Header = () => {
             <li className="cursor-pointer  duration-200 hover:bg-red rounded-full p-6 pt-2 pb-2">
               About
             </li>
-            <li className="cursor-pointer  duration-200 hover:bg-red rounded-full p-6 pt-2 pb-2">
-              Menus
-            </li>
+             <NavLink to="menu">
+          <li className="cursor-pointer  duration-200 hover:bg-red rounded-full p-6 pt-2 pb-2">
+            Menus
+          </li>
+          </NavLink>
             <li className="cursor-pointer  duration-200 hover:bg-red rounded-full p-6 pt-2 pb-2">
               Reservation
             </li>
