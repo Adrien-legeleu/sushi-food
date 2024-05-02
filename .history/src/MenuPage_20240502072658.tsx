@@ -10,13 +10,13 @@ const MenuPage = () => {
       <div className="h-full w-full bg-[url('././assets/menupage.jpeg')] bg-left-bottom bg-cover flex items-center pb-24">
         <Header />
         <div className="flex flex-col gap-10 mt-32">
-          <h1 className="text-6xl md:text-7xl text-center font-title text-whiteTitle mb-12">
+          <h1 className="m text-6xl dt:ext-7xl text-center font-title text-whiteTitle mb-12">
             Discover our menu !{" "}
           </h1>
           {MenuData.map((menu, index) => {
             return (
-              <div key={index} className="md:ml-5  md:mr-5">
-                <h3 className="font-title text-2xl mb-5 uppercase pl-2 text-green">
+              <div key={index} className="md:ml-5 md:mr-5 ">
+                <h3 className="font-title text-2xl mb-5 uppercase text-green">
                   {menu.titre}
                 </h3>
 

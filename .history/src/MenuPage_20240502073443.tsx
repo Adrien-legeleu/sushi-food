@@ -13,7 +13,7 @@ const MenuPage = () => {
           <h1 className="text-6xl md:text-7xl text-center font-title text-whiteTitle mb-12">
             Discover our menu !{" "}
           </h1>
-          {MenuData.map((menu, index) => {
+          {MenuData.map((menu: any, index) => {
             return (
               <div key={index} className="md:ml-5  md:mr-5">
                 <h3 className="font-title text-2xl mb-5 uppercase pl-2 text-green">
@@ -32,7 +32,7 @@ const MenuPage = () => {
                     pagination: false,
                   }}
                 >
-                  {menu.repas.map((food, index) => {
+                  {menu.repas.map((food: any, index: number) => {
                     return (
                       <SplideSlide
                         className="rounded-3xl flex flex-col justify-between gap-2 h-full pl-5 pr-5 relative "

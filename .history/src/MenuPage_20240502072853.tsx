@@ -15,8 +15,8 @@ const MenuPage = () => {
           </h1>
           {MenuData.map((menu, index) => {
             return (
-              <div key={index} className="md:ml-5  md:mr-5">
-                <h3 className="font-title text-2xl mb-5 uppercase pl-2 text-green">
+              <div key={index} className="md:ml-5 ml-2 md:mr-5 mr-2">
+                <h3 className="font-title text-2xl mb-5 uppercase text-green">
                   {menu.titre}
                 </h3>
 
